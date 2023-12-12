@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta property="og:title" content="SnowiApply">
+  <meta property="og:description" content="التقديم للادارة | Mod Apply">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1166376591425798154/1170430839398609066/1000003703.jpg?ex=655903a9&is=65468ea9&hm=22e066cdf28f927056681cf0f41c65a64a39013d4c877e1dac37d689abf9a7cc&">
+  <meta property="og:url" content="https://cdn.discordapp.com/attachments/1166376591425798154/1170430839398609066/1000003703.jpg?ex=655903a9&is=65468ea9&hm=22e066cdf28f927056681cf0f41c65a64a39013d4c877e1dac37d689abf9a7cc&">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="SnowiApply">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:video" content="https://discordury.herobnm7.repl.co/videoApply.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1280">
+  <meta property="og:video:height" content="720">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@1000&family=Mada:wght@700&family=Noto+Kufi+Arabic:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    /* Add animation class */
+    .animated {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Additional Styles for Responsiveness */
+    .form-group {
+      width: 100%;
+    }
+
+    .form-input,
+    .form-textarea {
+      width: calc(100% - 20px);
+    }
+
+    .form-button {
+      width: 100%;
+    }
+  </style>
+  <title>التقديم لسيرفر سنووي</title>
+
+</head>
+  <body>
+  <div class="container">
+    <h1 class="title animated fadeIn"><i class="fas fa-pen icon"></i>تقديم ادارة سيرفر سنووي</h1>
+    <form class="form" id="form" method="POST">
+      <div class="form-section" id="section1">
+        <div class="form-group">
+          <label class="form-label" for="name">اسمك الحقيقي؟ :</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="ادخل اسمك" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="age">عمرك الحقيقي؟:</label>
+          <input class="form-input" type="number" id="age" name="age" placeholder="أدخل عمرك على الاقل 13 سنة" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="discord">:اسمك في الديسكورد(لازم تكون داخل السيرفر والاسم صحيح)</label>
+          <input class="form-input" type="text" id="discord" name="discord" placeholder="ادخل اسمك في الديسكورد (e.g. user)" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="admin_reason">لماذا تريد أن تكون مسؤولا؟</label>
+          <textarea class="form-textarea" id="admin_reason" name="admin_reason" placeholder="ادخل سببك" required></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="unique_qualities">هل لديك أي صفات فريدة تجعلك مناسبًا لهذا المنصب؟</label>
+          <textarea class="form-textarea" id="unique_qualities" name="unique_qualities" placeholder="ادخل مهاراتك/صفاتك"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="server_needs">ما الذي تعتقد أنه غير متوفر في سيرفرنا في رأيك؟</label>
+          <textarea class="form-textarea" id="server_needs" name="server_needs" placeholder="أدخل أفكارك"></textarea>
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="previous_experience">هل كنت مسؤولاً في سيرفرات معروفة من قبل؟ إذا كانت الإجابة بنعم، كم عدد أعضائها؟</label>
+          <input class="form-input" type="text" id="previous_experience" name="previous_experience" placeholder="أدخل تجربتك السابقة">
+        </div>
+        <div class="form-group">
+          <label class="form-label" for="discord_usage">كم ساعة تقضيها على الديسكورد يوميًا (تقريبًا)؟</label>
+          <input class="form-input" type="text" id="discord_usage" name="discord_usage" placeholder="ادخل ساعات التوفر">
+        </div>
+        <button class="form-button next-button" type="button" onclick="nextSection(2)"><i class="fas fa-arrow-right icon"></i> التالي</button>
+      </div>
+
+      <div class="form-section" id="section2" style="display:none;">
+        <button class="form-button submit-button" type="submit"><i class="fas fa-check-circle icon"></i> ارسال</button>
+        <button class="form-button prev-button" type="button" onclick="prevSection(1)"><i class="fas fa-arrow-left icon"></i> السابق</button>
+      </div>
+    </form>
+    <p class="form-message" id="message"></p>
+  </div>
+
+  <script>
+    function nextSection(next) {
+      document.getElementById('section' + next).style.display = 'block';
+      document.getElementById('section' + (next - 1)).style.display = 'none';
+    }
+
+    function prevSection(prev) {
+      document.getElementById('section' + prev).style.display = 'block';
+      document.getElementById('section' + (prev + 1)).style.display = 'none';
+    }
+
+    document.getElementById('form').addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      var formData = new FormData(this);
+      var message = {
+        content: "تقديم جديد قد رسل",
+        embeds: [
+          {
+            title: "معلومات التقديم",
+            color: 3066993,
+            fields: [
+              {
+                name: "الاسم",
+                value: formData.get('name'),
+                inline: true
+              },
+              {
+                name: "العمر",
+                value: formData.get('age'),
+                inline: true
+              },
+              {
+                name: "الاسم في الديسكورد",
+                value: formData.get('discord'),
+                inline: false
+              },
+              {
+                name: "ليش تبي تصير ادمن",
+                value: formData.get('admin_reason'),
+                inline: false
+              },
+              {
+                name: "المهارات",
+                value: formData.get('unique_qualities'),
+                inline: false
+              },
+              {
+                name: "ايش ينقص السيرفر",
+                value: formData.get('server_needs'),
+                inline: false
+              },
+              {
+                name: "السيرفرات السابقة",
+                value: formData.get('previous_experience'),
+                inline: false
+              },
+              {
+                name: "استعمال الديسكورد اليومي",
+                value: formData.get('discord_usage'),
+                inline: false
+              }
+            ]
+          }
+        ]
+      }
+
+      fetch('https://discord.com/api/webhooks/1170443440929120407/a06k2LonusGj5oKNViJF_MP85QGKb-B_TvHWRC5vrEIIj72LOA6EkLtI9tk7VwrYEKS1', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(message)
+      })
+      .then(response => response.json())
+      .then(data => {
+        var message = document.getElementById('message');
+        if (data.success) {
+          message.innerText = 'تم الارسال بنجاح!';
+        } else {
+          message.innerText = 'خطأ في الارسال حاول لاحقا !!.';
+        }
+      })
+      .catch(error => {
+        var message = document.getElementById('message');
+        message.innerText = 'تم الارسال بنجاح';
+      });
+    });
+  </script>
+  </body>
+  </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta property="og:title" content="DiscordSnowi">
+  <meta property="og:description" content="Legendary Snowi Server | سيرفر سنووي الأسطوري">
+  <meta property="og:image" content="https://cdn.discordapp.com/attachments/1166376591425798154/1170430839398609066/1000003703.jpg?ex=655903a9&is=65468ea9&hm=22e066cdf28f927056681cf0f41c65a64a39013d4c877e1dac37d689abf9a7cc&">
+  <meta property="og:url" content="https://cdn.discordapp.com/attachments/1166376591425798154/1170430839398609066/1000003703.jpg?ex=655903a9&is=65468ea9&hm=22e066cdf28f927056681cf0f41c65a64a39013d4c877e1dac37d689abf9a7cc&">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="DiscordSnowi">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:video" content="https://discordury.herobnm7.repl.co/videoApply.mp4">
+  <meta property="og:video:type" content="video/mp4">
+  <meta property="og:video:width" content="1280">
+  <meta property="og:video:height" content="720">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cairo:wght@1000&family=Mada:wght@700&family=Noto+Kufi+Arabic:wght@800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @keyframes snowfall {
+      0% {
+        transform: translateY(0);
+      }
+      100% {
+        transform: translateY(100vh);
+      }
+    }
+
+    .snowflakes {
+      position: fixed;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .snowflake {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background-color: #fff;
+      animation: snowfall linear infinite;
+      animation-duration: 5s;
+      animation-delay: calc(-1 * var(--animation-delay));
+      transform-origin: top;
+      border-radius: 50%;
+      opacity: 0.8;
+    }
+  </style>
+  <title>سيرفر سنووي</title>
+  </head>
+
+  <body>
+    <div class="snowflakes">
+      <!-- Snowflakes will be dynamically added here with JavaScript -->
+    </div>
+  <main class="main-content">
+    <div class="dark-mode-switch">
+      <label class="switch">
+        <input type="checkbox" id="dark-mode-toggle">
+        <span class="slider round"></span>
+      </label>
+      <p>التبديل اللوني</p>
+    </div>
+
+    <header class="header">
+      <h1 class="header-title">مرحباً بك في سيرفر ديسكورد سنووي</h1>
+      <p class="header-description">انضم إلى مجتمعنا وتعرّف على أصدقاء جدد!</p>
+      <a href="https://discord.gg/FNgg2tQj67" class="join-button animated">انضم إلى السيرفر</a>
+    </header>
+    <section class="features">
+      <div class="feature">
+        <h2 class="feature-title">مجتمع ناشط</h2>
+        <p class="feature-description">شارك في مناقشات حية وشارك أفكارك.</p>
+      </div>
+      <div class="feature">
+        <h2 class="feature-title">الكون اداريا</h2>
+        <p class="feature-description">يمكنك التقديم للحصول على رتبة إدارية والمساهمة في إدارة السيرفر.</p>
+        <a href="apply.html" class="join-button">تقديم الآن</a>
+      </div>
+      <div class="feature">
+        <h2 class="feature-title">فعاليات وجوائز</h2>
+        <p class="feature-description">شارك في الفعاليات المثيرة واربح جوائز رائعة.</p>
+      </div>
+      <div class="feature">
+        <h2 class="feature-title">بوتات خاصة</h2>
+        <p class="feature-description">تفاعل مع بوتات الديسكورد المخصصة لدينا للمتعة والفائدة.</p>
+      </div>
+    </section>
+
+    <section class="members-online">
+      <h2 class="members-title">الأعضاء المتواجدين</h2>
+      <ul class="member-list">
+        <li class="Owner">
+          <div class="Owner-profile" data-tooltip="Snowii (Owner)">
+            <img
+              src="snowi.jpg"
+              class="member-image" alt="Ury">
+            <span class="Owner-name">Snowi</span>
+          </div>
+        </li>
+      </ul>
+      <div class="activity">
+        <div class="game">Minecraft</div>
+        <div class="status">يتفاعل في لعبة</div>
+      </div>
+    </section>
+
+    <section class="join-now">
+      <h2 class="join-title">انضم الآن وكن جزءا من مجتمعنا!</h2>
+      <a href="https://discord.gg/FNgg2tQj67" class="join-button">انضم للسيرفر</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p class="footer-text">&copy; 2023 Snowii Discord server. جميع الحقوق محفوظة. By ninja_0002</p>
+  </footer>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/65719970bfb79148e59b0388/1hh1ruofu';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+    </script>
+    <!--End of Tawk.to Script-->
+  <script src="script.js"></script>
+</body>
+
+</html>

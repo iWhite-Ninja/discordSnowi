@@ -1,0 +1,231 @@
+/* Import the font */
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@1000&family=Mada:wght@700&family=Noto+Kufi+Arabic:wght@800&display=swap');
+
+/* Define the font family */
+* {
+  font-family: 'Cairo', 'Mada', 'Noto Kufi Arabic', sans-serif;
+}
+
+/* Define the colors for a Discord-like theme */
+:root {
+  --primary-color: #7289da; /* Discord's primary color */
+  --secondary-color: #ffffff; /* Discord's secondary color */
+  --background-color: #36393f; /* Discord's background color */
+  --text-color: #dcdcdc; /* Discord's text color */
+  --error-color: #f04747;
+  --success-color: #43b581;
+}
+
+/* Style the body */
+body {
+  font-family: 'Cairo', 'Mada', 'Noto Kufi Arabic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+}
+
+/* Style the container */
+.container {
+  width: 80%;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: var(--secondary-color);
+  border-radius: 8px; /* Discord's rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Slightly more shadow */
+  padding: 20px;
+}
+
+/* Style the title */
+.title {
+  text-align: center;
+  font-size: 36px; /* Larger font size */
+  font-weight: 600; /* Bolder font weight */
+  color: var(--primary-color);
+  margin-bottom: 20px;
+}
+
+/* Style the form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the form group */
+.form-group {
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+/* Style the form label */
+.form-label {
+  display: block;
+  font-size: 18px; /* Larger font size */
+  font-weight: 500; /* Slightly bolder font weight */
+  color: var(--primary-color);
+  margin-bottom: 10px;
+}
+
+/* Style the form input */
+.form-input {
+  display: block;
+  width: 100%;
+  height: 50px; /* Taller input fields */
+  border-radius: 10px; /* More rounded corners */
+  border: none;
+  outline: none;
+  padding: 0 15px; /* More padding */
+  font-size: 18px; /* Larger font size */
+  font-weight: 400; /* Regular font weight */
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Style the form input on focus */
+.form-input:focus {
+  box-shadow: 0 0 10px var(--primary-color); /* Bigger focus shadow */
+}
+
+/* Style the form textarea */
+.form-textarea {
+  display: block;
+  width: 100%;
+  height: 150px; /* Taller textarea */
+  border-radius: 10px; /* More rounded corners */
+  border: none;
+  outline: none;
+  padding: 15px; /* More padding */
+  font-size: 18px; /* Larger font size */
+  font-weight: 400; /* Regular font weight */
+  color: var(--text-color);
+  background-color: var(--background-color);
+  resize: none;
+}
+
+/* Style the form textarea on focus */
+.form-textarea:focus {
+  box-shadow: 0 0 10px var(--primary-color); /* Bigger focus shadow */
+}
+
+/* Style the form button */
+.form-button {
+  width: 250px; /* Wider button */
+  height: 60px; /* Taller button */
+  border: none;
+  outline: none;
+  color: #fff;
+  background: var(--primary-color); /* Discord's primary color */
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 12px; /* Even more rounded corners */
+  font-size: 20px; /* Larger font size */
+  font-weight: 600; /* Bolder font weight */
+}
+
+.form-button:hover {
+  background: #677bc4; /* Slightly darker color on hover */
+}
+
+/* Style the form message */
+.form-message {
+  display: block;
+  width: 80%;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px; /* Larger font size */
+  font-weight: 500; /* Slightly bolder font weight */
+  color: var(--text-color);
+}
+
+/* Style the error message */
+.error-message {
+  color: var(--error-color);
+}
+
+/* Style the success message */
+.success-message {
+  color: var(--success-color);
+}
+
+/* Style the select element */
+select {
+  width: 250px; /* Wider select box */
+  height: 50px; /* Taller select box */
+  border-radius: 10px; /* Rounded corners */
+  border: none;
+  outline: none;
+  padding: 0 15px; /* More padding */
+  font-size: 18px; /* Larger font size */
+  font-weight: 400; /* Regular font weight */
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* Style the select options */
+select option {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Style the select dropdown on focus */
+select:focus {
+  box-shadow: 0 0 10px var(--primary-color); /* Bigger focus shadow */
+}
+
+/* Additions to the UI */
+/* Style the icons */
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: var(--primary-color);
+}
+
+/* Style the form icons on hover */
+.form-icon i:hover {
+  color: var(--secondary-color);
+}
+.form-button {
+  width: 320px; /* Wider and cooler button */
+  height: 80px; /* Taller and cooler button */
+  border: 2px solid var(--primary-color); /* Stylish border */
+  outline: none;
+  color: #fff;
+  background: var(--primary-color); /* Cool primary color */
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 30px; /* Ultra-cool rounded corners */
+  font-size: 28px; /* Larger and cooler font size */
+  font-weight: 600; /* Slightly lighter font weight */
+  text-transform: uppercase; /* Uppercase text */
+  transition: background 0.3s ease, transform 0.2s ease; /* Smooth hover transition */
+
+  /* Cool shadow */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.form-button:hover {
+  background: #216e96; /* Darker and stylish color on hover */
+  transform: scale(1.05); /* Slight scale-up on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Shadow enhancement on hover */
+}
+
+/* Gradient background for extra style */
+.form-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #0a5885, #245675);
+  border-radius: 30px;
+  z-index: -1;
+  transition: opacity 0.2s ease;
+  opacity: 0;
+}
+
+.form-button:hover::before {
+  opacity: 1; /* Gradual appearance of gradient background on hover */
+}
